@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+/*--------------------------------------------------------------header---------------------------------------------------------*/
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 60px;
+    border-bottom: 1px solid black;
+
+}
+
+.topnav img {
+    height: 50px;
+    width: auto;
+}
+
+.topnav .links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.topnav a:hover {
+    background-color: #939393;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav img {
+        height: 35px;
+        width: auto;
+    }
+    .topnav a{
+        font-size: 15px;
+    }
+    .topnav {
+        align-items: flex-start;
+        position: relative;
+        padding: 10px 10px;
+    }
+
+
+    .topnav .links {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+    }
+
+    .topnav.responsive .links {
+        display: flex;
+    }
+
+    .topnav a.icon {
+        display: block;
+        order: 1; 
+    }
+
+    .topnav.responsive {
+        flex-direction: row; 
+    }
+}
+
+
+
+/*--------------------------------------------------------------oferta 1---------------------------------------------------------*/
+/*#oferta {
+    height: auto;
+    width: 100%;
+}
+#oferta h1{
+    font-family: 'Black Ops One', cursive;
+}
+#oferta .container {
+    width: 100%;
+    background: #939393;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+    height: auto;
+}
+
+#oferta .container .image {
+    padding: 20px 0 20px 0;
+    max-width: 50%; 
+}
+
+#oferta .container .image .klima {
+    max-width: 100%;
+    max-height: 500px;
+    min-height: 300px;
+    min-width: 390px;
+    height: auto;
+}
+
+#oferta .container .text {
+    max-width: 50%; 
+    padding: 25px;
+    color: white;
+    font-size: 23px;
+    height: auto;
+}
+
+.klimatelefon {
+    display: none;
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+}
+
+
+@media (max-width: 800px) {
+    #oferta .container {
+        padding: 0 0 20px 0;
+        background: #939393;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+    #oferta .container .text{
+        margin: 20px 0 0 0 ;
+    }
+    #oferta .container .image,
+    #oferta .container .text {
+        max-width: 100%; 
+        padding: 0;
+    }
+    #oferta .container .image .klima {
+        max-width: 100%;
+        max-height: 500px;
+        min-height: 100px;
+        min-width: 100px;
+        height: auto;
+    }
+
+    .klima {
+        display: none;
+    }
+
+    .klimatelefon {
+        display: flex;
+    }
+}
+
+@media (max-width: 1400px) {
+    #oferta .container .text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    #oferta .container .text {
+        font-size: 15px;
+    }
+}
+
+
+*/
+/*--------------------------------------------------------------oferta 2---------------------------------------------------------*/
+
+#oferta2 {
+    height: auto;
+    width: 100%;
+}
+        #oferta2 .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .element {
+            width: calc(33.33% - 20px); /* Trzy elementy w rzędzie */
+            margin: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            max-width: 200px;
+        }
+
+        .element img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .element h2 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .element p {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .element {
+                margin: 5px;
+                padding: 10px;
+                width: calc(70% - 150px); /* Dwa elementy w rzędzie na małych ekranach */
+            }
+            .element h2 {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+
+
+/*--------------------------------------------------------------o firmie---------------------------------------------------------*/
+
+#onas {
+    background-color: #f0f0f0; 
+    width: 100%;
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+#onas .Ofirmie {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+#onas .Ofirmie h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'Black Ops One', cursive;
+}
+
+#onas .Ofirmie p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    width: 60%;
+    margin: 0 auto; 
+}
+
+@media (max-width: 800px) {
+    #onas {
+        width: 100%;
+        padding: 15px 0; 
+        text-align: center;
+    }
+    
+    #onas .Ofirmie {
+        margin: 0 auto; 
+        padding: 0 5px; 
+    }
+    
+    #onas .Ofirmie h1 {
+        font-size: 20px;
+        margin-bottom: 20px; 
+        font-family: 'Black Ops One', cursive;
+    }
+    
+    #onas .Ofirmie p {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #333;
+        width: 90%; 
+        margin: 0 auto;
+    }
+}
+
+
+/*--------------------------------------------------------------inwestycje---------------------------------------------------------*/
+
+
+
+#inwestycje {
+       width: 100%;
+       max-width: 100%;
+       background-color: white;
+       text-align: center;
+      }    
+    
+    
+      #inwestycje h1 {
+        font-family: 'Black Ops One', cursive;
+        color: black;
+        padding: 30px 0 20px 0;
+      }
+    
+      .gallery-container {
+        overflow-x: scroll;
+        margin: 0;
+      }
+    
+      .gallery {
+        display: flex;
+        gap: 10px;
+        width: fit-content;
+      }
+    
+      .gallery img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+
+      /*--------------------------------------------------------------kontakt---------------------------------------------------------*/
+
+
+#kontakt {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#kontakt h1 {
+    font-family: 'Black Ops One', cursive;
+    margin-bottom: 20px;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    width: 100%;
+}
+
+.kontakt .container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.kontakt .container img {
+    max-height: 50px;
+    width: auto;
+}
+.kontakt .container a{
+    color: black;
+}
+
+@media (max-width: 800px) {
+    #kontakt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        background-color: #f0f0f0; 
+    }
+    
+    h1 {
+        font-family: 'Black Ops One', cursive;
+        margin-bottom: 20px;
+    }
+    
+    .kontakt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 600px;
+        width: 100%;
+    }
+    
+    .kontakt .container {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .kontakt .container img {
+        max-height: 50px;
+        width: auto;
+    }
+}
+/*--------------------------------------------------------------loga---------------------------------------------------------*/
+
+
+#loga .partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#loga img {
+    height: 40px; 
+    width: auto; 
+    filter: grayscale(100%);
+    margin: 10px 20px;
+}
+@media (max-width: 600px) {
+    #loga img {
+        height: 15px; 
+        width: auto; 
+        filter: grayscale(100%);
+        margin: 5px 10px;
+    }
+}
+@media (max-width: 1300px) {
+    #loga img {
+        height: 30px;
+        width: auto; 
+        filter: grayscale(100%);
+        margin: 7px 14px;
+    }
+}
+
+/*--------------------------------------------------------------footer---------------------------------------------------------*/
+footer {
+    background-color: #242424;
+    color: rgb(109, 109, 109);
+    text-align: center;
+    padding: 20px 0;
+}
