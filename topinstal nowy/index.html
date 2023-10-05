@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topinstal - Rafał Kuźnik</title>
+
+  <link href="/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/zdj_do_strony/logoprzegladarka.jpg" type="image/jpg" sizes="16x16 32x32">
+ 
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lato&display=swap"></noscript>
+   
+  <meta name="keywords" content="Klimatyzacja, Montaż klimatyzacji, Pompy ciepła, Fotowoltaika, Wentylacja, Instalacje hydrauliczne,
+   Instalacje elektryczne, Instalacje chłodnicze, Bielsko-Biała, Żywiec, Profesjonalni, Lokalna firma, Energia odnawialna, Elektryk,
+    Systemy fotowoltaiczne, Montaż urządzeń chłodniczych, Wentylacja mechaniczna, Pomoc w doborze klimatyzacji">
+
+  <meta name="description" content="Topinstal - Rafał Kuźnik, firma oferująca dobór i montaż klimatyzacji, pomp ciepła, fotowoltaiki i wiele innych.">
+  <meta property="og:title" content="Topinstal - Rafał Kuźnik">
+  <meta property="og:description" content="Firma oferująca dobór i montaż klimatyzacji, pomp ciepła, fotowoltaiki i wiele innych.">
+  <meta property="og:image" content="/zdj_do_strony/logo.jpg">
+  <meta property="og:url" content="https://www.yourwebsite.com">
+  
+
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    var menuLinks = document.querySelectorAll(".topnav .links a");
+    for (var i = 0; i < menuLinks.length; i++) {
+        menuLinks[i].addEventListener("click", function () {
+            var x = document.getElementById("myTopnav");
+            x.className = "topnav";
+        });
+    }
+
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modal-image');
+    const closeModalButton = document.querySelector('.close');
+
+    galleryImages.forEach((image) => {
+        image.addEventListener('click', () => {
+            modal.style.display = 'block';
+            modalImage.src = image.src;
+            document.body.style.overflow = 'hidden'; // Zablokuj przewijanie strony
+        });
+    });
+
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Przywróć przewijanie strony
+    }
+
+    closeModalButton.addEventListener('click', () => {
+        closeModal();
+    });
+
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+</script>
+
+
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <img src="/zdj_do_strony/logo.jpg">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="links">
+                <a href="#oferta2" class="active">Oferta</a>
+                <a href="#onas">O firmie</a>
+                <a href="#inwestycje">Inwestycje</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </div>
+    </header>
+    <!--<section id="oferta">
+        <div class="container">
+            <div class="image">
+                <img src="/zdj_do_strony/air-conditioner.jpg" class="klima" alt="Klimatyzacja">
+                <img src="/zdj_do_strony/air-conditioner-phone .jpg" class="klimatelefon" alt="Klimatyzacja">
+            </div>
+            <div class="text">
+                <h1>OFERTA</h1>
+                <p>Oferujemy kompleksowe rozwiązania dla Twoich potrzeb. <strong>Dobierzemy i zamontujemy</strong> wysokiej jakości systemy, które zapewniają komfort 
+                    i efektywność. Nasza oferta obejmuje szeroki zakres usług, w tym:<br><br>
+                <strong>klimatyzacja,
+                 pompy ciepła,
+                 fotowoltaika,
+                 wentylacja,
+                 instalacje hydrauliczne,
+                 instalacje elektryczne,
+                 instalacje chłodnicze.<br><br></strong>
+                Jesteśmy zespołem pasjonatów, którzy priorytetowo traktują zadowolenie klienta oraz jakość świadczonych usług. Dążymy 
+                do tego, aby nasze rozwiązania były nie tylko funkcjonalne, ale także estetyczne i dopasowane do indywidualnych potrzeb każdego klienta.
+                </p>
+            </div>
+        </div>
+    </section>-->
+    <section id="oferta2">
+      <div class="container">
+        <div class="element">
+            <img src="/zdj oferta/air-source-heat-pump.png" alt="Zdjęcie 1">
+            <h2>pompy ciepła</h2>
+        </div>
+        <div class="element">
+            <img src="/zdj oferta/air-conditioner.png" alt="Zdjęcie 2">
+            <h2>klimatyzacja</h2>
+        </div>
+        <div class="element">
+            <img src="/zdj oferta/solar-panel.png" alt="Zdjęcie 3">
+            <h2>fotowoltaika</h2>
+        </div>
+        <div class="element">
+          <img src="/zdj oferta/ventilation.png" alt="Zdjęcie 1">
+          <h2>wentylacja</h2>
+      </div>
+      <div class="element">
+          <img src="/zdj oferta/pipeline.png" alt="Zdjęcie 2">
+          <h2>instalacje hydrauliczne</h2>
+      </div>
+      <div class="element">
+          <img src="/zdj oferta/backup.png" alt="Zdjęcie 3">
+          <h2>instalacje elektryczne</h2>
+      </div>
+
+        <!-- Dodaj więcej elementów według potrzeb -->
+    </div>
+    </section>
+    <section id="onas">
+        <container class="Ofirmie">
+            <h1>O FIRMIE</h1><br>
+            <p>Nasza firma, założona przez Rafała Kuźnika, jest profesjonalnym dostawcą usług z branży klimatyzacji,
+                pomp ciepła, wentylacji, fotowoltaiki i innych zaawansowanych technologii. Od 2012 roku, z pasją i zaangażowaniem, zapewniamy 
+                kompleksowe rozwiązania dla naszych klientów, co przekłada się na ich pełne zadowolenie. Nasze usługi są wyłącznie na zasadzie
+                 polecenia, co jest dowodem na zaufanie jakim nas obdarzają zadowoleni klienci. Dzięki wiedzy i doświadczeniu założyciela oraz 
+                 zaufanemu zespołowi specjalistów, tworzymy innowacyjne i energooszczędne rozwiązania dla klientów w różnych sektorach. 
+                 Nasza działalność od ponad 10 lat świadczy o stabilności, jakości usług i ciągłym dążeniu do zaspokajania potrzeb naszych klientów.</p>
+        </container>
+    </section>
+      <section id="inwestycje">
+        <h1>INWESTYCJE</h1>
+        <div class="gallery">
+          <img src="zdj_do_galerii/zdj1.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj2.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj3.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj4.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj5.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj6.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj7.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj8.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj9.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj10.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj11.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj12.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj13.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj14.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj15.jpg" alt="Zdjęcie" class="gallery-image">
+          <img src="zdj_do_galerii/zdj16.jpg" alt="Zdjęcie" class="gallery-image">
+        </div>
+        <div class="modal" id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-image">
+        </div>
+    </section>
+    </section>
+
+    <section id="kontakt">
+      <h1>Skontaktuj się z nami:</h1><br>
+      <section class="kontakt">
+      <div class="container">
+        <img src="/zdj_do_strony/phone-line-icon.webp"><br>
+        <p>+48 785 582 323</p>
+      </div>
+      <div class="container">
+        <img src="/zdj_do_strony/paper-plane-icon-1.webp"><br>
+        <p>topinstal.rk@gmail.com</p>
+      </div>
+      <div class="container">
+        <a href="https://www.facebook.com/profile.php?id=100095223896466"><img src="/zdj_do_strony/facebook-square-icon.webp"></a><br>
+        <a href="https://www.facebook.com/profile.php?id=100095223896466">Facebook</a>
+      </div>
+    </section>
+    </section>
+    <section id="loga">
+      <div class="partners">
+          <img src="/zdj_do_strony/panasonic.webp" alt="Logo Firma 1">
+          <img src="/zdj_do_strony/mitsubishi.png" alt="Logo Firma 2">
+          <img src="/zdj_do_strony/rotenso.png" alt="Logo Firma 3">
+          <img src="/zdj_do_strony/gree-logo.jpg" alt="Logo Firma 4">
+          <img src="/zdj_do_strony/logo_kaisai.png" alt="Logo Firma 5">
+          <img src="/zdj_do_strony/coper.svg" alt="Logo Firma 6">
+          <img src="/zdj_do_strony/junkers-logo.jpg" alt="Logo Firma 7">
+          <img src="/zdj_do_strony/samsung.png" alt="Logo Firma 8">
+      </div>
+  </section>
+  <footer>
+    <p>Copyright © 2023 Topinstal</p>
+  </footer>
+</body>
+</html>
